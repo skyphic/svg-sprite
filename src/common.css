@@ -1,0 +1,51 @@
+:root {
+	background-color: #ffffff;
+	box-sizing: border-box;
+	color: #000000;
+	cursor: default;
+	font: 100%/1.5 sans-serif;
+}
+
+html {
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	/* Edge 12+, Internet Explorer 11- */
+	overflow-y: scroll;
+	/* All browsers without overlaying scrollbars */
+	-webkit-text-size-adjust: 100%;
+	/* iOS 8+, Windows Phone 8.1+ */
+}
+
+body{
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', '\6E38\30B4\30B7\30C3\30AF   Medium', '\30E1\30A4\30EA\30AA', meiryo, sans-serif;
+	color: #000;
+	font-size: 0.875rem;
+	width: 100%;
+	word-wrap: break-word;
+	min-width: .1px;
+}
+.c-ico {
+	position: relative;
+}
+.c-ico:before, .e-ico:before {
+	content: '';
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+}
+
+.size-XL:before {
+	font-size: 8rem;
+}
+
+.size-L:before {
+	font-size: 6rem;
+}
+
+.size-M:before {
+	font-size: 4rem;
+}
+
+.size-S:before {
+	font-size: 2rem;
+}
+

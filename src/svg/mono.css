@@ -1,0 +1,12 @@
+.mono--camera:before {
+	background: url("mono-01c9ec95.svg") 0 0 no-repeat;
+	background-size: 1em;
+}
+.mono--mic:before {
+	background: url("mono-01c9ec95.svg") 0 50% no-repeat;
+	background-size: 1em;
+}
+.mono--tv:before {
+	background: url("mono-01c9ec95.svg") 0 100% no-repeat;
+	background-size: 1em;
+}

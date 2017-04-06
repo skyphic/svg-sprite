@@ -1,0 +1,19 @@
+{
+  "name": "svg-sprite",
+  "author": "takes",
+  "homepage": "",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "svg-sprite",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lite": "lite-server --open",
+    "svg": "node sprite.js"
+  },
+  "devDependencies": {
+    "lite-server": "^2.3.0",
+    "svg-sprite": "^1.3.6"
+  }
+}
