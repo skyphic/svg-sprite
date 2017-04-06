@@ -29,10 +29,9 @@ glob('*.css', {cwd: cwd}, function (err, files) {
 var spriterDir = 'spriter/*.svg';
 var spriter = new SVGSpriter({
   mode: {
-    "log": "verbose",
     "css": {
       "dest": "src/svg",
-      "layout": "vertical",
+      "layout": "horizontal",
       "prefix": ".%s:before",
       "sprite": "spriter.svg",
       "dimensions": false,
@@ -41,8 +40,7 @@ var spriter = new SVGSpriter({
           "dest": "spriter.css",
           "template": "src/svg/templ/templ.css"
         }
-      },
-      "symbol": true
+      }
     }
   }
 });
@@ -53,19 +51,9 @@ buildSprite(spriterDir, spriter);
 var monoDir = 'mono/*.svg';
 var mono = new SVGSpriter({
   mode: {
-    "transform": [
-      {
-        "svgo": {
-          "plugins": [
-            { "removeUselessStrokeAndFill": true }
-          ]
-        }
-      }
-    ],
-    "log": "verbose",
     "css": {
       "dest": "src/svg",
-      "layout": "vertical",
+      "layout": "horizontal",
       "prefix": ".%s:before",
       "sprite": "mono.svg",
       "dimensions": false,
@@ -74,8 +62,7 @@ var mono = new SVGSpriter({
           "dest": "mono.css",
           "template": "src/svg/templ/templ.css"
         }
-      },
-      "symbol": true
+      }
     }
   }
 });
